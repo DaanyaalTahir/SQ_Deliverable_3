@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: binary-calc-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: binary-calc
+  template:
+    metadata:
+      labels:
+        app: binary-calc
+    spec:
+      containers:
+        - image: gcr.io/sunlit-virtue-379616/binarycalculator
+          ports:
+            - containerPort: 3306
+              name: binary-calc
