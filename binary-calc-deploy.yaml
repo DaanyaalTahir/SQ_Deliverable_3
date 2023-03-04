@@ -14,6 +14,7 @@ spec:
     spec:
       containers:
         - image: gcr.io/sunlit-virtue-379616/binarycalculator
+          name: binary-calc
           ports:
             - containerPort: 3306
               name: binary-calc
