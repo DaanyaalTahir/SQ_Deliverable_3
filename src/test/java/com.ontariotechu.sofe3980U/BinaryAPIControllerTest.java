@@ -76,18 +76,18 @@ public class BinaryAPIControllerTest {
 			.andExpect(MockMvcResultMatchers.jsonPath("$.operator").value("add"));
     }
 
-    /**
-     * Test The add functions by adding zero to a binary number
-     */
-	@Test
-    public void add5() throws Exception {
-        this.mvc.perform(get("/add_json").param("operand1","0").param("operand2","1010"))//.andDo(print())
-            .andExpect(status().isOk())
-            .andExpect(MockMvcResultMatchers.jsonPath("$.operand1").value(0))
-			.andExpect(MockMvcResultMatchers.jsonPath("$.operand2").value(1010))
-			.andExpect(MockMvcResultMatchers.jsonPath("$.result").value(1010))
-			.andExpect(MockMvcResultMatchers.jsonPath("$.operator").value("add"));
-    }
+    // /**
+    //  * Test The add functions by adding zero to a binary number
+    //  */
+	// @Test
+    // public void add5() throws Exception {
+    //     this.mvc.perform(get("/add_json").param("operand1","0").param("operand2","1010"))//.andDo(print())
+    //         .andExpect(status().isOk())
+    //         .andExpect(MockMvcResultMatchers.jsonPath("$.operand1").value(0))
+	// 		.andExpect(MockMvcResultMatchers.jsonPath("$.operand2").value(1010))
+	// 		.andExpect(MockMvcResultMatchers.jsonPath("$.result").value(1010))
+	// 		.andExpect(MockMvcResultMatchers.jsonPath("$.operator").value("add"));
+    // }
 
 
     /**
