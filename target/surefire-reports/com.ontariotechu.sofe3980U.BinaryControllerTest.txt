@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.ontariotechu.sofe3980U.BinaryControllerTest
 -------------------------------------------------------------------------------
-Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.535 s - in com.ontariotechu.sofe3980U.BinaryControllerTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.488 s - in com.ontariotechu.sofe3980U.BinaryControllerTest
